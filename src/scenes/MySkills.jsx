@@ -6,9 +6,9 @@ const MySkills = () => {
   const isABoveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="skillspage">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-32 mt-32">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -46,10 +46,10 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="skills h-[100%] md:flex md:justify-between gap-32">
         {/* EXPERIENCE */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-[8vh]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -59,7 +59,7 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
@@ -67,7 +67,7 @@ const MySkills = () => {
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
-            <p className="mt-5">
+            <p className="mt-[7vh]">
               A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
               morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
               odio sit sagittis,
@@ -78,7 +78,7 @@ const MySkills = () => {
 
         {/* INNOVATIVE */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-[8vh]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -88,7 +88,7 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
@@ -96,7 +96,7 @@ const MySkills = () => {
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
-            <p className="mt-5">
+            <p className="mt-[7vh]">
               A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
               morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
               odio sit sagittis,
@@ -106,7 +106,7 @@ const MySkills = () => {
 
         {/* IMAGINATIVE */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-[8vh]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -116,7 +116,7 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
@@ -124,7 +124,7 @@ const MySkills = () => {
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
-            <p className="mt-5">
+            <p className="mt-[7vh]">
               A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
               morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
               odio sit sagittis,
