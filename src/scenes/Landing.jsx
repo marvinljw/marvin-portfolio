@@ -10,20 +10,20 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-20"
     >
       {/*  IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreen ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
-                            before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full
+            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-20
+                            before:rounded-t-[400px] before:w-[25vw] before:h-full
                             before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                                max-w-[400px] md:max-w-[600px]"
+                                max-w-[40vw] md:max-w-[30vw]"
               src="assets/profile-image.png"
             />
           </div>
@@ -64,8 +64,8 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-8 text-sm text-center md:text-start">
-            asdsad asdasd dasdasdasd dasdasdasddasd asdas dasdasdasdgqsd sdfas
-            bcxvw
+            Hello there! I have created this website using React for learning 
+              and also to tell you more about myself. So welcomeeee! :D
           </p>
         </motion.div>
 

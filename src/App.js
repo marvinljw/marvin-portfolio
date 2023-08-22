@@ -32,7 +32,7 @@ function App() {
         selectedPage={selectedPage} 
         setSelectedPage = {setSelectedPage} 
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full mb-10">
         {isAboveMediumScreens && (
           <DotGroup 
             selectedPage={selectedPage}
@@ -43,20 +43,20 @@ function App() {
       </div>
 
       <LineGradient/>
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full mb-10">
           <About />
       </div>
 
       <LineGradient/>
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full mb-10">
           <MySkills />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto mb-10">
           <Projects />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto mb-10">
           <Contact />
       </div>
 
