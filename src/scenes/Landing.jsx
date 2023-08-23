@@ -40,7 +40,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* MAIN SECTION  */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-1/2 mt-12 md:mt-32">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -55,7 +55,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Marvin {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 pl-2 pt-2
                             xs:before:content-brush before:absolute before:-left-[25px]
                             before:-top-[70px] before:z-[-1]"
             >

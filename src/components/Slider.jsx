@@ -79,12 +79,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   // }, [items.length, slide]); // when images uploaded or slide changed manually we start timer
 
   return (
-    <div
-      // style={{ width, height }}
-      className={`slider w-[${width}] h-[${height}] overflow-hidden relative`}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-    >
+    <div className={`slider w-[${width}] h-[${height}] relative flex justify-center`}>
       <SliderContext.Provider
         value={{
           goToSlide,
@@ -95,7 +90,13 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
         }}
       >
         <Arrows />
-        <SlidesList />
+        <div
+          className={`viewport w-[90%] h-full overflow-hidden`}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
+          <SlidesList />
+        </div>
         {/* <Dots /> */}
       </SliderContext.Provider>
     </div>
