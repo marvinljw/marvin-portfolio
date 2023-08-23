@@ -10,30 +10,31 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-20"
+      className="md:flex md:justify-between md:items-center md:h-full gap-16 "
     >
       {/*  IMAGE SECTION */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-24">
         {isAboveMediumScreen ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-20
-                            before:rounded-t-[400px] before:w-[25vw] before:h-full
+                            before:rounded-t-[400px] before:w-[29vw] before:h-full
                             before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                                max-w-[40vw] md:max-w-[30vw]"
-              src="assets/profile-image.png"
+              className="hover:filter hover:scale-110 transition duration-500 z-10 w-full
+                                max-w-[35vw] md:max-w-[29vw] rounded-t-[400px]"
+              src="assets/DSC09687.jpg"
             />
+            
           </div>
         ) : (
           <div>
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                                max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
+                                max-w-[400px] md:max-w-[600px] rounded-t-[400px]"
+              src="assets/DSC09687.jpg"
             />
           </div>
         )}
