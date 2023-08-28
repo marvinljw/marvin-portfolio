@@ -8,8 +8,8 @@ export const SliderContext = createContext();
 
 const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   const [items, setItems] = useState([
-    { title: "hi", url: "../assets/skills-image.png" },
-    { title: "hi2", url: "../assets/skills-image.png" },
+    { title: "hi", url: "../assets/front_img.jpg" },
+    { title: "hi2", url: "../assets/project-4.jpeg" },
     { title: "hi3", url: "../assets/skills-image.png" },
     { title: "hi4", url: "../assets/skills-image.png" },
   ]);
@@ -79,7 +79,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   // }, [items.length, slide]); // when images uploaded or slide changed manually we start timer
 
   return (
-    <div className={`slider w-[${width}] h-[${height}] relative flex justify-center`}>
+    <div className={`slider w-[${width}] relative flex justify-center`}>
       <SliderContext.Provider
         value={{
           goToSlide,
@@ -91,7 +91,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
       >
         <Arrows />
         <div
-          className={`viewport w-[90%] h-full overflow-hidden`}
+          className={`viewport w-[80%] h-full overflow-hidden border border-red`}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
