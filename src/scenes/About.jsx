@@ -4,7 +4,7 @@ import Slider from "../components/Slider";
 
 const About = () => {
   return (
-    <section id="about" className="pt-20 pb-48">
+    <section id="about" className="pt-20 pb-48 ">
       {/* HEADINGS */}
       <motion.div
         className="md:w-6/7 mx-auto text-center"

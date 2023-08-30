@@ -9,7 +9,7 @@ export const SliderContext = createContext();
 const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   const [items, setItems] = useState([
     {
-      title: "I am a Student!",
+      title: "Am a Student!",
       url: "../assets/front_img.jpg",
       content: [
         "Graduating from National University of Singapore on May 2024",
@@ -18,7 +18,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
       ],
     },
     {
-      title: "I love Adventures",
+      title: "Love Adventures!",
       url: "../assets/paragliding.jpg",
       content: [
         "Went to paraglide in Chamonix, France on Feb 2023",
@@ -28,7 +28,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
       ],
     },
     {
-      title: "I love talking to people",
+      title: "Love talking to people!",
       url: "../assets/friends.jpg",
       content: [
         "Made lots of loving friends in Delft, Netherlands on my exchange",

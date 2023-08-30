@@ -27,7 +27,7 @@ export default function Slide({ data: { url, title, content } }) {
         <p className="text-header font-playfair font-semibold text-2xl md:text-4xl my-[6%]">
           {title}
         </p>
-        <div className="text-body font-playfair flex flex-col gap-2 justify-start px-8 text-sm">
+        <div className="text-body font-playfair flex flex-col gap-4 justify-start px-[3vw] text-lg text-left">
            {renderContent()}
             {/* <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>
             <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>

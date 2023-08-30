@@ -24,10 +24,11 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-5 mb-7">
-            This is a very brief summary of skillsets that I have! Feel me to
-            ask me more :D
+          <p className="mt-5 mb-7 font-playfair">
+            This is a very brief summary of my skillsets that I have had experience in projects or my internships.
           </p>
+            Ask me anything :D
+          
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -49,7 +50,7 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="skills h-[100%] md:flex md:justify-between gap-32 font-playfair">
+      <div className="skills h-[100%] md:flex md:justify-between gap-20 font-playfair">
         {/* Programming Languages */}
         <motion.div
           className="md:w-1/3 mt-[8vh]"
@@ -128,8 +129,10 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
             <p className="mt-[7vh]">
-            <p><span className="font-semibold text-yellow">Date Visualisation:</span> Tableu, Excel </p>
-            <p><span className="font-semibold text-yellow">Machine Learning:</span> Linear/Multi-Regression, Convolutional Neural Network, Random Forest, Learning-to-Rank Model </p>
+            <p><span className="font-semibold text-yellow">Data Visualisation:</span> Tableu, Excel, Matplotlib, Seaborn </p>
+            <p><span className="font-semibold text-yellow">Data Manipulation and Cleaning:</span> Handling missing data, outliers with pandas </p>
+            <p><span className="font-semibold text-yellow">Statistical Analysis:</span> Regression Analysis, ANOVA, hypothesis testing </p>
+            <p><span className="font-semibold text-yellow">Machine Learning:</span> Linear/Multi-Regression, Classification, Convolutional Neural Network, Random Forest, Support Vector Machine, K-Means Clustering, XGBoost, Learning-to-Rank Model </p>
 
             </p>
           </div>
