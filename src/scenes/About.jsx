@@ -24,6 +24,7 @@ const About = () => {
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
+          <button onClick={() => console.log("hi")} >hi</button>
         </div>
 
         <div className="my-4">

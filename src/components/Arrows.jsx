@@ -5,7 +5,7 @@ export default function Arrows() {
   const { changeSlide } = useContext(SliderContext);
 
   return (
-    <div className="arrows absolute flex h-full z-10 items-center w-full justify-between">
+    <div className="arrows absolute flex h-full items-center w-full justify-between z-0">
       
       {/* LEFT ARROW */}
       <div

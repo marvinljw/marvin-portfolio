@@ -1,8 +1,9 @@
 import { useState, useEffect, createContext } from "react";
 import SlidesList from "./SlidesList";
 import PropTypes from "prop-types";
-// import { getImages } from "../hooks/ImagesApi";
 import Arrows from "./Arrows";
+import Dots from "./Dots";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const SliderContext = createContext();
 
@@ -79,7 +80,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   // }, [items.length, slide]); // when images uploaded or slide changed manually we start timer
 
   return (
-    <div className={`slider w-[${width}] relative flex justify-center`}>
+    <div className={`slider w-[${width}] relative flex justify-center `}>
       <SliderContext.Provider
         value={{
           goToSlide,
@@ -89,15 +90,19 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
           items,
         }}
       >
-        <Arrows />
+        <Arrows/>
+        
         <div
           className={`viewport w-[80%] h-full overflow-hidden border border-red`}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
+          
           <SlidesList />
+          <Dots/>
         </div>
-        {/* <Dots /> */}
+        
+        
       </SliderContext.Provider>
     </div>
   );
