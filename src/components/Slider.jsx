@@ -3,28 +3,43 @@ import SlidesList from "./SlidesList";
 import PropTypes from "prop-types";
 import Arrows from "./Arrows";
 import Dots from "./Dots";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const SliderContext = createContext();
 
 const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   const [items, setItems] = useState([
-    { title: "hi", url: "../assets/front_img.jpg" },
-    { title: "hi2", url: "../assets/project-4.jpeg" },
-    { title: "hi3", url: "../assets/skills-image.png" },
-    { title: "hi4", url: "../assets/skills-image.png" },
+    {
+      title: "I am a Student!",
+      url: "../assets/front_img.jpg",
+      content: [
+        "Graduating from National University of Singapore on May 2024",
+        "Am an independent, fast Learner and hard worker",
+        "My motto in life is to be 1% every single day and enjoy the journey",
+      ],
+    },
+    {
+      title: "I love Adventures",
+      url: "../assets/paragliding.jpg",
+      content: [
+        "Went to paraglide in Chamonix, France on Feb 2023",
+        "Went to fly a glider in Sweden on April 2023",
+        "Adventures brings the thrills and happiness for me",
+        "Open to overseas opportunities if possible!",
+      ],
+    },
+    {
+      title: "I love talking to people",
+      url: "../assets/friends.jpg",
+      content: [
+        "Made lots of loving friends in Delft, Netherlands on my exchange",
+        "Love to have meaningful discussion to generate new innovative ideas",
+        "Everyone is unique and has their special story to tell :D",
+      ],
+    },
+    { title: "I Love Nature", url: "../assets/nature.jpg", content: ["xxxx"] },
   ]);
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null);
-
-  // useEffect(() => {
-  //   const loadData = async () => {
-  //     const images = await getImages();
-  //     setItems(images);
-  //     console.log(items);
-  //   };
-  //   loadData();
-  // }, []);
 
   const changeSlide = (direction = 1) => {
     let slideNumber = 0;
@@ -90,19 +105,15 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
           items,
         }}
       >
-        <Arrows/>
-        
+        <Arrows />
         <div
-          className={`viewport w-[80%] h-full overflow-hidden border border-red`}
+          className={`viewport w-[80%] h-full overflow-hidden `}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
-          
           <SlidesList />
-          <Dots/>
+          <Dots />
         </div>
-        
-        
       </SliderContext.Provider>
     </div>
   );

@@ -24,10 +24,9 @@ const About = () => {
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
-          <button onClick={() => console.log("hi")} >hi</button>
         </div>
 
-        <div className="my-4">
+        <div className="mt-[5vh]">
             <Slider />
         </div>
       </motion.div>

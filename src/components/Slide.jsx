@@ -1,6 +1,19 @@
 import React from "react";
+import ReactHtmlParser from 'react-html-parser'; 
 
-export default function Slide({ data: { url, title } }) {
+
+export default function Slide({ data: { url, title, content } }) {
+  
+  const renderContent = () => {
+    const fullContent = [];
+    for (let i = 0; i < content.length; i++) {
+      fullContent.push(
+        <li className="list-none before:content-['\27A4'] before:mr-5">{content[i]}</li>
+      )
+    };
+    return fullContent
+  }
+
   return (
     <div className="slide flex-[1_0_100%] justify-center flex z-2">
       <div className="polaroid w-[42%] h-[100%]">
@@ -12,16 +25,16 @@ export default function Slide({ data: { url, title } }) {
           />
         </div>
       </div>
-
       <div className="slide-title w-[50%]">
         <p className="text-header font-playfair font-semibold text-2xl md:text-4xl my-[6%]">
-          I am a Student!
+          {title}
         </p>
         <div className="text-body font-playfair flex flex-col gap-2 justify-start px-8 text-sm">
+           {renderContent()}
+            {/* <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>
             <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>
             <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>
-            <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>
-            <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li>
+            <li className="list-none before:content-['\27A4'] before:mr-5">Studying in National University of Singapore (NUS)</li> */}
         </div>
       </div>
     </div>

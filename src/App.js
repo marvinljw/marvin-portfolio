@@ -43,7 +43,7 @@ function App() {
       </div>
 
       <LineGradient/>
-      <div className="w-5/6 mx-auto md:h-full mb-10">
+      <div className="w-5/6 mx-auto md:h-full mb-[15vh]">
           <About />
       </div>
 
