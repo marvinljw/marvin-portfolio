@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isABoveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
+  const alertMessage = (e) => {
+    let text = "Would you like to download Marvin's Resume?"
+    let confirmVal = window.confirm(text);
+    if (confirmVal === true) {
+      return true
+    } else {
+      e.preventDefault();
+    }
+  }
+
   return (
     <section id="skills" className="skillspage">
       {/* HEADER AND IMAGE SECTION */}
@@ -27,7 +37,9 @@ const MySkills = () => {
           <p className="mt-5 mb-7 font-playfair">
             This is a very brief summary of my skillsets that I have had experience in projects or my internships.
           </p>
-            Ask me anything :D
+          <a href="assets/marvinleow_resume.pdf" onClick={(e) => alertMessage(e)} className="font-playfair bg-red py-2 px-4 rounded" download>
+            Click here to download my Resume!
+          </a>
           
         </motion.div>
 
@@ -64,7 +76,7 @@ const MySkills = () => {
           }}
         >
           <div className="relative">
-            <div className="z-10">
+            <div className="z-10 h-32">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-1">
                 Programming Languages
@@ -72,14 +84,14 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
 
-            <p className="mt-[5vh]">
+            <p className="mt-[3vh] md:mt-[5vh] text-xl">
               <p> <span className="font-semibold text-blue">Development:</span> Python, Java, JavaScript, Elixir </p>
               <p> <span className="font-semibold text-blue">Data-related:</span>  Python, R, MySQL, PostgreSQL</p>  
             </p>
           </div>
         </motion.div>
 
-        {/* INNOVATIVE */}
+        {/* Web Development */}
         <motion.div
           className="md:w-1/3 mt-[8vh]"
           initial="hidden"
@@ -92,23 +104,23 @@ const MySkills = () => {
           }}
         >
           <div className="relative">
-            <div className="z-10">
+            <div className="z-10 h-32">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Web Development
               </p>
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-red absolute right-0 top-0 z-[-1]" />
-            <p className="mt-[7vh]">
+            <p className="mt-[3vh] md:mt-[5vh] text-xl">
             <p><span className="font-semibold text-red">Frontend:</span> ReactJS, VueJS, Tkinter, HTML, CSS, Phoenix Frontend</p>
             <p><span className="font-semibold text-red">Backend:</span> Firebase, Phoenix Backend</p>
             <p><span className="font-semibold text-red">Database:</span> MySQL</p>
-            <p><span className="font-semibold text-red">Others:</span> Agile(SCRUM), Confluence, Jiras, Git</p>
+            <p><span className="font-semibold text-red">Others:</span> Agile(SCRUM), Confluence, Jiras, Git, Docker</p>
             </p>
           </div>
         </motion.div>
 
-        {/* IMAGINATIVE */}
+        {/* Data-related */}
         <motion.div
           className="md:w-1/3 mt-[8vh]"
           initial="hidden"
@@ -121,17 +133,17 @@ const MySkills = () => {
           }}
         >
           <div className="relative">
-            <div className="z-10">
+            <div className="z-10 h-32">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Data-related
               </p>
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
-            <p className="mt-[7vh]">
+            <p className="mt-[3vh] md:mt-[5vh] text-xl">
             <p><span className="font-semibold text-yellow">Data Visualisation:</span> Tableu, Excel, Matplotlib, Seaborn </p>
             <p><span className="font-semibold text-yellow">Data Manipulation and Cleaning:</span> Handling missing data, outliers with pandas </p>
-            <p><span className="font-semibold text-yellow">Statistical Analysis:</span> Regression Analysis, ANOVA, hypothesis testing </p>
+            <p><span className="font-semibold text-yellow">Statistical Analysis:</span> Regression Analysis, ANOVA, Hypothesis testing </p>
             <p><span className="font-semibold text-yellow">Machine Learning:</span> Linear/Multi-Regression, Classification, Convolutional Neural Network, Random Forest, Support Vector Machine, K-Means Clustering, XGBoost, Learning-to-Rank Model </p>
 
             </p>

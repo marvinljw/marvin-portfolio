@@ -1,67 +1,44 @@
-import { useEffect, useState } from "react";
-import useMediaQuery from "./hooks/useMediaQuery";
+import Home from "./views/Home"
+import PixiumProject from "./views/PixiumProject";
 import Navbar from "./scenes/Navbar";
-import DotGroup from "./scenes/DotGroup";
-import Projects from "./scenes/Projects";
-import About from "./scenes/About";
-import Landing from "./scenes/Landing";
-import MySkills from "./scenes/MySkills"
-import Contact from "./scenes/Contact"
-import Footer from "./scenes/Footer"
-import LineGradient from "./components/LineGradient"
+import { useEffect, useState } from "react";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState('home');
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) setIsTopOfPage(true);
       if (window.scrollY !== 0) setIsTopOfPage(false);
-    }
+    };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="app bg-deep-blue">
-      <Navbar 
-        isTopOfPage={isTopOfPage} 
-        selectedPage={selectedPage} 
-        setSelectedPage = {setSelectedPage} 
-      />
-      <div className="w-5/6 mx-auto md:h-full mb-12">
-        {/* {isAboveMediumScreens && (
-          <DotGroup 
-            selectedPage={selectedPage}
-            setSelectedPage = {setSelectedPage} 
-          />
-        )} */}
-        <Landing setSelectedPage={setSelectedPage} />
-      </div>
 
-      <LineGradient/>
-      <div className="w-5/6 mx-auto md:h-full mb-[15vh]">
-          <About />
+    <div>
+      <Router>
+        <Navbar
+          isTopOfPage={isTopOfPage}
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+        />
+        <Routes>
+          <Route index path="/"  element={<Home setSelectedPage={setSelectedPage}/>} />
+          <Route exact path="/pixium" element={<PixiumProject />}/>
+          {/* <Navigate to="/" /> */}
+        </Routes>
+      </Router>
       </div>
-
-      <LineGradient/>
-      <div className="w-5/6 mx-auto md:h-full mb-10">
-          <MySkills />
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto mb-10">
-          <Projects />
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto mb-10">
-          <Contact />
-      </div>
-
-      <Footer />
-    </div> 
   );
 }
 
