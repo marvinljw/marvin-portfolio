@@ -35,7 +35,7 @@ const About = () => {
   { title: "I Love Nature", url: "../assets/nature.jpg", content: ["xxxx"] },
 ]
   return (
-    <section id="about" name="about" className="pt-20 pb-48 ">
+    <section id="about" name="about" className="pt-20">
       {/* HEADINGS */}
       <motion.div
         className="md:w-6/7 mx-auto text-center"

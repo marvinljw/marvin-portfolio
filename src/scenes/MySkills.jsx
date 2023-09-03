@@ -20,7 +20,7 @@ const MySkills = () => {
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-32 mt-32">
         <motion.div
-          className="md:w-1/3"
+          className="md:w-[40vw]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

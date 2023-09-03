@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Slider from "../components/Slider";
 import LineGradient from "../components/LineGradient";
+
 
 const PixiumProject = () => {
   const items = [
@@ -15,6 +15,11 @@ const PixiumProject = () => {
         content: [],
       }
   ];
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="project-page h-full mt-[12vh] md:flex md:justify-center">
