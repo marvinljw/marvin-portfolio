@@ -2,6 +2,7 @@ import Home from "./views/Home"
 import PixiumProject from "./views/PixiumProject";
 import Navbar from "./scenes/Navbar";
 import { useEffect, useState } from "react";
+import Footer from "./scenes/Footer";
 
 import {
   BrowserRouter as Router,
@@ -36,6 +37,8 @@ function App() {
           <Route exact path="/pixium" element={<PixiumProject />}/>
           {/* <Navigate to="/" /> */}
         </Routes>
+
+        <Footer/>
       </Router>
       </div>
   );

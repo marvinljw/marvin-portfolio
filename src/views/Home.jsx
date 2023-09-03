@@ -52,8 +52,6 @@ const Home = (setSelectedPage) => {
       <div className="w-5/6 mx-auto mb-10">
         <Contact />
       </div>
-
-      <Footer />
     </div>
   );
 };
