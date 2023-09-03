@@ -91,35 +91,6 @@ const MySkills = () => {
           </div>
         </motion.div>
 
-        {/* Web Development */}
-        <motion.div
-          className="md:w-1/3 mt-[8vh]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative">
-            <div className="z-10 h-32">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Web Development
-              </p>
-            </div>
-            <div className="w-1/2 md:w-2/3 h-32 bg-red absolute right-0 top-0 z-[-1]" />
-            <p className="mt-[3vh] md:mt-[5vh] text-xl">
-            <p><span className="font-semibold text-red">Frontend:</span> ReactJS, VueJS, Tkinter, HTML, CSS, Phoenix Frontend</p>
-            <p><span className="font-semibold text-red">Backend:</span> Firebase, Phoenix Backend</p>
-            <p><span className="font-semibold text-red">Database:</span> MySQL</p>
-            <p><span className="font-semibold text-red">Others:</span> Agile(SCRUM), Confluence, Jiras, Git, Docker</p>
-            </p>
-          </div>
-        </motion.div>
-
         {/* Data-related */}
         <motion.div
           className="md:w-1/3 mt-[8vh]"
@@ -134,7 +105,7 @@ const MySkills = () => {
         >
           <div className="relative">
             <div className="z-10 h-32">
-              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Data-related
               </p>
@@ -149,6 +120,37 @@ const MySkills = () => {
             </p>
           </div>
         </motion.div>
+
+        {/* Web Development */}
+        <motion.div
+          className="md:w-1/3 mt-[8vh]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative">
+            <div className="z-10 h-32">
+              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-3xl mt-3">
+                Web Development
+              </p>
+            </div>
+            <div className="w-1/2 md:w-2/3 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <p className="mt-[3vh] md:mt-[5vh] text-xl">
+            <p><span className="font-semibold text-red">Frontend:</span> ReactJS, VueJS, Tkinter, HTML, CSS, Phoenix Frontend</p>
+            <p><span className="font-semibold text-red">Backend:</span> Firebase, Phoenix Backend</p>
+            <p><span className="font-semibold text-red">Database:</span> MySQL</p>
+            <p><span className="font-semibold text-red">Others:</span> Agile(SCRUM), Confluence, Jiras, Git, Docker</p>
+            </p>
+          </div>
+        </motion.div>
+
+        
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ const Home = (setSelectedPage) => {
 
   return (
     <div className="app bg-deep-blue">
-      <div className="w-5/6 mx-auto md:h-full mb-12">
+      <div className="w-5/6 mx-auto mb-12 md:h-[100vh]">
         {/* {isAboveMediumScreens && (
           <DotGroup 
             selectedPage={selectedPage}
