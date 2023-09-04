@@ -31,7 +31,7 @@ const PixiumProject = () => {
         </p>
         <LineGradient width="1/2" />
 
-        <p className="mt-[4vh] text-md font-opensans">
+        <p className="mt-[4vh] text-sm font-opensans">
           <p>
             In this project, there are three roles: Requestor, Admin and Staff.
             The 1st video showcases the features of a Requestor and the 2nd
@@ -85,7 +85,7 @@ const PixiumProject = () => {
           </div>
 
           {/* Report */}
-          <div className="feature-chat mt-5">
+          <div className="feature-chat mt-5 mb-[10vh]">
             <p className="font-semibold text-xl mb-2">
               <span className="text-red">Feature 3:</span> Report
             </p>

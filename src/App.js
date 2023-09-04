@@ -4,6 +4,7 @@ import Navbar from "./scenes/Navbar";
 import { useEffect, useState } from "react";
 import Footer from "./scenes/Footer";
 import MyTeamProject from "./views/MyTeamProject";
+import FraudProject from "./views/FraudProject";
 
 import {
   BrowserRouter as Router,
@@ -37,6 +38,7 @@ function App() {
           <Route index path="/"  element={<Home setSelectedPage={setSelectedPage}/>} />
           <Route exact path="/pixium" element={<PixiumProject />}/>
           <Route exact path="/myteam" element={<MyTeamProject />}/>
+          <Route exact path="/fraudproject" element={<FraudProject />}/>
           {/* <Navigate to="/" /> */}
         </Routes>
 

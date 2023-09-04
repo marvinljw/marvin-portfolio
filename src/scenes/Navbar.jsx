@@ -14,7 +14,6 @@ const Linkx = ({ page, selectedPage, setSelectedPage }) => {
                 hover:text-yellow transition duration-400`}
         href={`#${lowerCasePage}`}
         onClick={() => {
-          console.log(page);
           setSelectedPage(lowerCasePage);
         }}
       >

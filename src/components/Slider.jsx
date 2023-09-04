@@ -9,7 +9,6 @@ export const SliderContext = createContext();
 const Slider = function ({ items, width, height, isAbout }) { 
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null);
-  console.log(width);
 
   const changeSlide = (direction = 1) => {
     let slideNumber = 0;

@@ -13,7 +13,7 @@ export default function Slide({ data: { url, title, content }, isAbout }) {
     }
     return fullContent;
   };
-
+  
   if (isAbout) {
     return (
       <div className="slide flex-[1_0_100%] sm:flex mx-auto justify-center z-2">
@@ -40,7 +40,15 @@ export default function Slide({ data: { url, title, content }, isAbout }) {
     return (
       <div className="slide flex-[1_0_100%] sm:flex mx-auto justify-center z-2">
         <div className="player-wrapper h-[70vh] w-[50wh]">
-          <ReactPlayer url={url} controls={true} width="100%" height="100%" />
+          {url.slice(-3) == "mp4" ? (
+            <ReactPlayer url={url} controls={true} width="100%" height="100%" />
+          ) : (
+            <img
+              src={url}
+              alt={title}
+              className="block border-black border-2 rounded-lg shadow-lg"
+            />
+          )}
         </div>
       </div>
     );

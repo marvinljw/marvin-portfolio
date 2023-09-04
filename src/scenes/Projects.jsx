@@ -110,8 +110,8 @@ const Projects = (setSelectedPage) => {
           <Project
             title="Car Insurance Fraud Detection"
             content="Aug-Nov 2022"
-            url="../assets/projects/MyTeam.png"
-            link="/myteam"
+            url="../assets/projects/carfraud.webp"
+            link="/fraudproject"
           />
           
         </motion.div>
