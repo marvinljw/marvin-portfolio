@@ -16,7 +16,7 @@ const MySkills = () => {
   }
 
   return (
-    <section id="skills" className="skillspage">
+    <section id="skills" className="skillspage mb-[12vh]">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-32 mt-32">
         <motion.div
@@ -84,7 +84,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
 
-            <p className="mt-[3vh] md:mt-[5vh] text-xl">
+            <p className="mt-[3vh] md:mt-[5vh] text-md">
               <p> <span className="font-semibold text-blue">Development:</span> Python, Java, JavaScript, Elixir </p>
               <p> <span className="font-semibold text-blue">Data-related:</span>  Python, R, MySQL, PostgreSQL</p>  
             </p>
@@ -111,7 +111,7 @@ const MySkills = () => {
               </p>
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
-            <p className="mt-[3vh] md:mt-[5vh] text-xl">
+            <p className="mt-[3vh] md:mt-[5vh] text-md">
             <p><span className="font-semibold text-yellow">Data Visualisation:</span> Tableu, Excel, Matplotlib, Seaborn </p>
             <p><span className="font-semibold text-yellow">Data Manipulation and Cleaning:</span> Handling missing data, outliers with pandas </p>
             <p><span className="font-semibold text-yellow">Statistical Analysis:</span> Regression Analysis, ANOVA, Hypothesis testing </p>
@@ -141,7 +141,7 @@ const MySkills = () => {
               </p>
             </div>
             <div className="w-1/2 md:w-2/3 h-32 bg-red absolute right-0 top-0 z-[-1]" />
-            <p className="mt-[3vh] md:mt-[5vh] text-xl">
+            <p className="mt-[3vh] md:mt-[5vh] text-md">
             <p><span className="font-semibold text-red">Frontend:</span> ReactJS, VueJS, Tkinter, HTML, CSS, Phoenix Frontend</p>
             <p><span className="font-semibold text-red">Backend:</span> Firebase, Phoenix Backend</p>
             <p><span className="font-semibold text-red">Database:</span> MySQL</p>
