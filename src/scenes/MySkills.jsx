@@ -35,7 +35,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-5 mb-7 font-playfair">
-            This is a very brief summary of my skillsets that I have had experience in projects or my internships.
+            A very brief summary of my skillsets which I have acquired through my experiences in projects and internships.
           </p>
           <a href="assets/marvinleow_resume.pdf" onClick={(e) => alertMessage(e)} className="font-playfair bg-red py-2 px-4 rounded" download>
             Click here to download my Resume!

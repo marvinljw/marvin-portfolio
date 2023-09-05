@@ -26,11 +26,12 @@ export default function Slide({ data: { url, title, content }, isAbout }) {
             />
           </div>
         </div>
+
         <div className="slide-text sm:w-[50%] w-full">
-          <p className="text-header font-playfair font-semibold text-2xl md:text-4xl my-[6%]">
+          <p className="text-header font-playfair font-semibold text-2xl md:text-3xl my-[4%] ">
             {title}
           </p>
-          <div className="text-body font-playfair flex flex-col gap-4 justify-start px-[3vw] text-md sm:text-lg text-left">
+          <div className="text-body font-playfair flex flex-col gap-4 justify-start px-[4vw] text-md sm:text-lg text-left">
             {renderContent()}
           </div>
         </div>

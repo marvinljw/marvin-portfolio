@@ -3,8 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-
-const Landing = ({ setSelectedPage }) => {
+const Landing = ({ setSelectedPage: { setSelectedPage } }) => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -26,7 +25,6 @@ const Landing = ({ setSelectedPage }) => {
                                 max-w-[35vw] md:max-w-[29vw] rounded-t-[400px]"
               src="assets/DSC09687.jpg"
             />
-            
           </div>
         ) : (
           <div>
@@ -64,9 +62,9 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-8 text-sm text-center md:text-start">
-            Hello there! I have created this website using React for learning 
-              and also to tell you more about myself. So welcomeeee! :D
+          <p className="mt-10 mb-8 text-md font-opensans text-center md:text-start">
+            Hello there! I have created this website using ReactJS for learning
+            and also to tell you more about myself. Welcome to my life here!
           </p>
         </motion.div>
 
@@ -100,6 +98,11 @@ const Landing = ({ setSelectedPage }) => {
             </div>
           </AnchorLink>
         </motion.div>
+        <div className="font-opensans mt-5">
+          <p>Mobile: +65 9696 2707</p>
+          <p>Email: marvin.leow999@gmail.com</p>
+          <p>City: Singapore</p>
+        </div>
 
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
@@ -112,7 +115,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-            <SocialMediaIcons />
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>

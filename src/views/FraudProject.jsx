@@ -37,7 +37,7 @@ const FraudProject = () => {
               className="bg-red rounded-md cursor-pointer p-2 hover:bg-blue inline-flex items-center"
               href="https://docs.google.com/document/d/1wi7MzmPW7tb34IdDI6IYKuMCgbrdt8zswH5trHH2ATo/edit?usp=sharing"
             >
-              Documentation
+              Report
             </a>
             <a
               className="bg-red rounded-md cursor-pointer p-2 hover:bg-blue inline-flex items-center"
