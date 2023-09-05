@@ -6,7 +6,7 @@ const MyTeamProject = () => {
   const items = [
     {
       title: "",
-      url: "../assets/projects/",
+      url: "../assets/projects/myTeamvid.mp4",
       content: [],
     },
   ];
